@@ -1,0 +1,18 @@
+[package]
+name = "simple-chat"
+authors = ["hedonwang"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.86"
+axum = { version = "0.7.5", features = ["json", "tokio", "tracing", "http1"] }
+dashmap = "5.5.3"
+futures = "0.3.30"
+tokio = { version = "1.38.0", features = ["bytes", "io-util", "macros", "net", "rt", "rt-multi-thread", "sync", "tracing"] }
+tokio-stream = "0.1.15"
+tokio-util = { version = "0.7.11", features = ["codec"] }
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
